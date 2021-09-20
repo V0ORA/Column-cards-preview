@@ -1,0 +1,122 @@
+:root{
+    --card_orange:hsl(31, 77%, 52%);
+    --card_cyan:hsl(184, 100%, 22%);
+    --card_verydarkcyan:hsl(179, 100%, 13%);
+    --transparent_white:hsla(0, 0%, 100%, 0.75);
+    --light_gray:hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 15px;
+    font-family: 'Big Shoulders Display';
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: auto;
+    padding: 0 20%;
+}
+.card{
+    height: 65vh;
+    padding: 5%;
+}
+
+.sedan{
+    background-color: var(--card_orange);
+    border-radius: 3% 0 0 3%;
+}
+.suvs{
+    background-color: var(--card_cyan);
+}
+.luxury{
+    background-color: var(--card_verydarkcyan);
+    border-radius: 0 3% 3% 0;
+}
+
+.card_title{
+    color: var(--light_gray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    margin: 25px 0;
+    font-size:35px;
+}
+
+.card_paragraph{
+    color: var(--transparent_white);
+    /* text-indent: 10px; */
+    line-height: 20px;
+    font-size:small;
+}
+.card_container img{
+    width: 30%;
+}
+
+.btn{
+    text-decoration: none;
+    background: var(--light_gray);
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    border-radius: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: inherit;  
+    display: inline-block;
+}
+
+a {
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.sedan a{
+    color: var(--card_orange);
+}
+
+.suvs a{
+    color: var(--card_cyan);
+}
+
+.luxury a{
+    color:var(--card_verydarkcyan);
+}
+
+.btn:hover{
+    background: inherit;
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) solid 2px;
+}
+
+@media (max-width:375px) {
+    .container{
+        display: flex;
+        flex-direction:column;
+        padding-top: 10%;
+        padding: 100px auto;
+        
+    }
+    .card{
+        padding: 15%;
+        padding-bottom: 40%;
+
+    }
+    .btn{
+        margin-top:12px;
+    }
+    .sedan{
+        border-radius: 2% 2% 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 2% 2%;
+    }
+}
