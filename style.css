@@ -53,7 +53,7 @@ body{
 
 .card_paragraph{
     color: var(--transparent_white);
-    /* text-indent: 10px; */
+    position: relative;
     line-height: 20px;
     font-size:small;
 }
@@ -71,12 +71,12 @@ body{
     margin-top: 50px;
     text-align: center;
     color: inherit;  
-    display: inline-block;
 }
 
 a {
     padding-top: 10px;
     font-size: 13px;
+    border: hsl(0, 0%, 95%) solid 2px;
 }
 
 .sedan a{
